@@ -1,0 +1,48 @@
+{
+  "name": "amanui",
+  "version": "0.1.0",
+  "description": "Open-source React component library — TypeScript, Tailwind CSS v4, accessible by default",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": ["dist"],
+  "sideEffects": false,
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup",
+    "test": "vitest",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "chromatic": "chromatic"
+  },
+  "peerDependencies": {
+    "react": ">=19.0.0",
+    "react-dom": ">=19.0.0"
+  },
+  "devDependencies": {
+    "@storybook/react": "^8.0.0",
+    "@storybook/react-vite": "^8.0.0",
+    "@testing-library/react": "^16.0.0",
+    "@types/react": "^19",
+    "chromatic": "^11.0.0",
+    "clsx": "^2.0.0",
+    "storybook": "^8.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5",
+    "vitest": "^1.0.0"
+  },
+  "keywords": ["react", "components", "typescript", "tailwind", "accessible"],
+  "author": "Aman Soni <amansonidev@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amansoni1605/amanui"
+  }
+}
